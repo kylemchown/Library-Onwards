@@ -41,6 +41,9 @@ public class Runner {
 		lib.checkout(abby, "Twilight");
 		System.out.println(a.getCurrentOwner());
 		System.out.println(a.isCheckedOut());
+		lib.checkin("Twilight");
+		System.out.println(a.getCurrentOwner());
+		System.out.println(a.isCheckedOut());
 		
 	}
 

@@ -16,4 +16,13 @@ public class Library {
 			}
 		}
 	}
+	
+	public void checkin(String itemname) {
+		for (Item i : itemList) {
+			if (i.getName() == itemname) {
+				i.setCheckedOut(false);
+				i.setCurrentOwner(0);
+			}
+		}
+	}
 }
