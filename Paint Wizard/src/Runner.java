@@ -20,11 +20,10 @@ public class Runner {
 		System.out.println(room1.waste(cheap));
 		System.out.println(room1.waste(cheap, 450));
 		
-		room1.leastWaste(paintList, 450);
 		
-		System.out.println(room1.cheapest(paintList, 200));
+		System.out.println(room1.cheapest(paintList, 170));
+		System.out.println(room1.leastWaste(paintList, 170));
 		
-		System.out.println(room1.test(3,  5));
 	}
 
 }
