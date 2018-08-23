@@ -35,16 +35,23 @@ public class Runner {
 		}*/
 		Library lib = new Library(abs);
 		Person abby = new Person("Abby");
+		Book f = new Book(300, "Tiger's Curse");
 		
-		System.out.println(a.getCurrentOwner());
-		System.out.println(a.isCheckedOut());
-		lib.checkout(abby, "Twilight");
-		System.out.println(a.getCurrentOwner());
-		System.out.println(a.isCheckedOut());
-		lib.checkin("Twilight");
-		System.out.println(a.getCurrentOwner());
-		System.out.println(a.isCheckedOut());
+		for (Item i : lib.getItemList()) {
+			System.out.println(i.getName());
+		}
 		
+		lib.addItem(f);
+	
+		for (Item i : lib.getItemList()) {
+			System.out.println(i.getName());
+		}
+		
+		lib.removeItem("Tiger's Curse");
+		
+		for (Item i : lib.getItemList()) {
+			System.out.println(i.getName());
+		}
 	}
 
 }
